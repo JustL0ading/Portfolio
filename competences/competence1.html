@@ -9,7 +9,10 @@
 <body>
     <div class="container">
         <a href="../index.html" class="retour-button">↩ Accueil</a>
-        
+        <button class="mode-button" onclick="toggleTheme()">
+            <span class="icon" id="themeIcon">☀️</span>
+            <span id="themeText">Mode Clair</span>
+        </button>
         <h1>Réaliser</h1>
         <p class="subtitle">Partir des exigences et aller jusqu'à une application complète</p>
         
@@ -47,5 +50,71 @@
         
         <p class="footer">© 2025 Quang-Liêm NGUYEN - Portfolio BUT Informatique | Tous droits réservés</p>
     </div>
+
+        <script>
+        // Récupérer le thème sauvegardé ou utiliser 'dark' par défaut
+        let currentTheme = localStorage.getItem('theme') || 'dark';
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            const currentModeSpan = document.getElementById('currentMode');
+            const colorText = document.getElementById('colorText');
+
+            if (currentTheme === 'dark') {
+                // Passer en mode clair
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+                currentTheme = 'light';
+                localStorage.setItem('theme', 'light'); // Sauvegarder le choix
+                
+                // Mettre à jour les éléments si ils existent
+                if (currentModeSpan) currentModeSpan.textContent = 'Clair';
+                if (colorText) colorText.textContent = 'Rouge';
+            } else {
+                // Passer en mode sombre
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+                currentTheme = 'dark';
+                localStorage.setItem('theme', 'dark'); // Sauvegarder le choix
+                
+                // Mettre à jour les éléments si ils existent
+                if (currentModeSpan) currentModeSpan.textContent = 'Sombre';
+                if (colorText) colorText.textContent = 'Vert';
+            }
+        }
+
+        // Appliquer le thème au chargement
+        function applyTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            const currentModeSpan = document.getElementById('currentMode');
+            const colorText = document.getElementById('colorText');
+
+            if (currentTheme === 'light') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+                if (currentModeSpan) currentModeSpan.textContent = 'Clair';
+                if (colorText) colorText.textContent = 'Rouge';
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+                if (currentModeSpan) currentModeSpan.textContent = 'Sombre';
+                if (colorText) colorText.textContent = 'Vert';
+            }
+        }
+
+        // Initialisation au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            applyTheme();
+            console.log('Page chargée avec le thème:', currentTheme);
+        });
+    </script>
 </body>
 </html>
