@@ -8,6 +8,10 @@
 </head>
 <body>
     <div class="container">
+        <button class="mode-button" onclick="toggleTheme()">
+            <span class="icon" id="themeIcon">☀️</span>
+            <span id="themeText">Mode Clair</span>
+        </button>
         <h1>Portfolio</h1>
         <p class="subtitle">BUT Informatique - Parcours A</p>
         
@@ -37,5 +41,39 @@
         
         <p class="footer">© 2025 Quang-Liêm NGUYEN - Portfolio BUT Informatique | Tous droits réservés</p>
     </div>
+
+
+    <script>
+        // Récupérer le thème sauvegardé ou utiliser 'light' par défaut
+        let currentTheme = 'dark';
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            const currentModeSpan = document.getElementById('currentMode');
+            const colorText = document.getElementById('colorText');
+
+            if (currentTheme === 'dark') {
+                // Passer en mode sombre
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+                currentTheme = 'light';
+            } else {
+                // Passer en mode clair
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+                currentTheme = 'dark';
+            }
+        }
+
+        // Initialisation au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Le thème clair est déjà appliqué par défaut
+            console.log('Page chargée en mode clair');
+        });
+    </script>
 </body>
 </html>

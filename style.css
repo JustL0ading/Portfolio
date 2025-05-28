@@ -1,3 +1,17 @@
+:root {
+    --bg-image: url(background2.png);
+    --text-color: #ffffff;
+    --gradient-start: hsla(259, 19%, 36%, 1);
+    --gradient-end: hsla(228, 75%, 16%, 1);
+}
+
+[data-theme="light"] {
+    --bg-image: url(background2_light.png);
+    --text-color: #0a1647;
+    --gradient-end: hsla(259, 19%, 64%, 1);
+    --gradient-start: hsla(228, 75%, 84%, 1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +20,7 @@
 
 body {
     font-family: Amiri;
-    background-image: url(background2.png);
+    background-image: var(--bg-image);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,18 +40,18 @@ body {
 }
 
 h1 {
-    color: white;
-    font-size: 3rem;
+    color: var(--text-color);
+    font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     letter-spacing: 2px;
 }
 
 .subtitle {
-    color: white;
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     opacity: 0.9;
 }
 
@@ -48,7 +62,7 @@ h1 {
     border-color: rgba(226, 226, 226, 0.905);
     border-radius: 25px;
     padding: 10px 10px 15px 15px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 800px;
@@ -57,7 +71,7 @@ h1 {
 }
 
 .competences-title {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 2rem;
     font-weight: bold;
 
@@ -70,11 +84,9 @@ h1 {
 }
 
 .competence-button {
-    background: hsla(259, 19%, 36%, 1);
-    background: linear-gradient(90deg, hsla(259, 19%, 36%, 1) 0%, hsla(228, 75%, 16%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(259, 19%, 36%, 1) 0%, hsla(228, 75%, 16%, 1) 100%);
-
-    color: white;
+    background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    
+    color: var(--text-color);
     padding: 15px 25px;
     border: none;
     border-radius: 12px;
@@ -116,7 +128,7 @@ h1 {
 }
 
 .footer {
-    color: white;
+    color: var(--text-color);
     font-size: 0.9rem;
     opacity: 0.8;
 }
@@ -138,4 +150,21 @@ h1 {
         font-size: 1rem;
         padding: 15px 20px;
     }
+}
+
+.mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    background: #111;
+    cursor: pointer;
+    z-index: 0;
 }
