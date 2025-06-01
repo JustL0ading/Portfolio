@@ -492,3 +492,19 @@ h1 {
         font-size: 1.1rem;
     }
 }
+
+.annexes-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.annexes-section img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
