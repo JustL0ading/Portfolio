@@ -474,6 +474,16 @@ h1 {
     display: block;
 }
 
+.annexes-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .projects-container {
