@@ -518,3 +518,42 @@ h1 {
     transform: scale(1.02);
     cursor: pointer;
 }
+
+a {
+    color: var(--text-color);
+}
+
+table {
+    background-color: var(--project-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr, td {
+    border: 1px solid;
+    font-size: 16px;
+    padding: 10px;
+}
+
+th {
+    text-align: center;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.first-column {
+    width: 50%;
+}
+
+.column {
+    font-family: Arial;
+    text-align: center;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 0;
+}

@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compétence - BUT Informatique Parcours A</title>
     <link rel="stylesheet" href="../competence-style.css">
 </head>
+
 <body>
     <div class="container">
         <a href="../../index.html" class="retour-button">↩ Accueil</a>
-        
+        <button class="mode-button" onclick="toggleTheme()">
+            <span class="icon" id="themeIcon">☀️</span>
+            <span id="themeText">Mode Clair</span>
+        </button>
         <h1>Collaborer</h1>
-        <p class="subtitle">Situer son rôle et ses missions au sein d'une équipe informatique</p>
-        
+        <p class="subtitle">Collaborer au sein d’une équipe informatique.</p>
+
         <div class="content-section">
             <div class="content-block">
                 <h2>📄 Présentation</h2>
@@ -23,29 +28,399 @@
                     Elle demande également de communiquer clairement, de partager les informations utiles, d’utiliser des outils de collaboration (gestion de versions, messagerie, documentation partagée…), et de s’adapter aux méthodes de travail collectives. Collaborer, c’est aussi savoir écouter, proposer des solutions et respecter les choix techniques décidés en commun.
                 </p>
             </div>
-            
+
             <div class="content-block">
                 <h2>🛠️ L'acquisition des compétences</h2>
                 <p>
-
+                    Jusqu’à présent, cette compétence n’a pu être développée que par des projets académiques. Les projets dans le cadre de l’alternance n’ont jusqu’à présent pas demandé à travailler en équipe pour effectuer les tâches. Le travail en équipe se fera au cours de la deuxième année d’alternance, mais sûrement dans une équipe de petite taille.
                 </p>
-            </div>
-
-            <div class="content-block">
-                <h2>📜 Les compétences acquises</h2>
                 <p>
+                    Bien que le développement de la compétence soit limité, le niveau 2 semble être bien pris en main sans atteindre la perfection non plus. Le niveau atteint reste néanmoins décent et sa qualité pourra être améliorée lors des futurs projets.
                 </p>
+
+                <br><br>
+                <h3>Ensemble des compétences</h3>
+                <h4>Informatique</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">Savoir</span>
+                    <span class="tech-tag">Environnement</span>
+                    <span class="tech-tag">Collaboration</span>
+                    <span class="tech-tag">Pratique</span>
+                </div>
+                <h4>Communication</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">Langages</span>
+                    <span class="tech-tag">Présentation</span>
+                    <span class="tech-tag">Vulgarisation</span>
+                    <span class="tech-tag">Oration</span>
+                </div>
             </div>
 
             <div class="content-block">
                 <h2>🧪 Projets associés</h2>
-                <p>
 
+                <div class="project-item">
+                    <h3 class="project-title">🌐 PPP: Réalisation d'une fiche métier</h3>
+                    <p class="project-description">
+                        Réalisation d'une fiche métier ainsi que d'une présentation orale sur un métier de l'informatique
+                        <br><br>
+                        La consigne demandait de sélectionner trois métiers informatiques listés sur un site de la CNAM et de faire une fiche métier et une présentation orale regroupant certaines informations données sur le métier sélectionné par l’enseignant. L’objectif était de pouvoir recueillir les bonnes informations pour pouvoir présenter le métier de façon simple et vulgarisée, pour que le contenu de la profession soit compréhensible pour tous.
+                        <br><br>
+                        La réalisation de ces travaux s’est effectuée en groupe de deux et a permis de travailler en équipe ainsi que la découverte de métiers inconnus jusqu’à présent. Ces travaux ont aussi permis le développement des capacités oratoires, des bons procédés de rédaction/synthèse ainsi que de la qualité des supports visuels.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Expression</span>
+                        <span class="tech-tag">Culture</span>
+                        <span class="tech-tag">Présentation</span>
+                        <span class="tech-tag">Synthèse</span>
+                    </div>
+
+                    <!-- Section Annexes -->
+                    <div class="annexes-toggle">
+                        <button class="annexes-button" onclick="toggleAnnexes(this)">
+                            <span class="annexes-arrow">▶</span>
+                            Voir les détails
+                        </button>
+                        <div class="annexes-content">
+                            <div class="annexes-inner">
+
+                                <div class="annexes-section">
+                                    <h3>Les AC abordé :</h3>
+                                    <h4>Niveau 1</h4>
+                                    <ul>
+                                        <li>AC1: Appréhender l’écosystème numérique</li>
+                                        <li>AC2: Découvrir les aptitudes requises selon les différents secteurs informatiques</li>
+                                        <li>AC3: Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire</li>
+                                    </ul>
+                                    <h4>Niveau 2</h4>
+                                    <ul>
+                                        <li>AC1: Comprendre la diversité, la structure et la dimension de l’informatique dans une organisation (ESN, DSI, …)</li>
+                                        <li>AC4: Rendre compte de son activité professionnelle</li>
+                                    </ul>
+                                </div>
+
+                                <div class="annexes-section">
+                                    <h4>Fiche métier :</h4>
+                                    <a href="NGUYEN_VINCENT_Fiche_Métier.pdf" target="_blank">📄 Voir la fiche métier</a>
+
+                                    <h4>Présentation :</h4>
+                                    <a href="Support.pdf" target="_blank">📄 Voir la présentation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">🌐 Communication: Présentation vulgarisée</h3>
+                    <p class="project-description">
+                        Réalisation d'une présentation vulgarisée et dynamique adaptée pour tout public
+                        <br><br>
+                        L’objectif de ce travail était de sélectionner un sujet parmi une liste et de le présenter en 10 minutes maximum. La présentation devait être vulgarisée et devait employer des procédés d’expression pour permettre la compréhension du sujet pour tous et rendre la présentation dynamique et aussi intéressante que possible, la notation étant surtout basée sur l’expression ainsi que les méthodes d’explications et de représentation.
+                        <br><br>
+                        Note obtenue: 20/20
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Expression</span>
+                        <span class="tech-tag">Culture</span>
+                        <span class="tech-tag">Présentation</span>
+                        <span class="tech-tag">Synthèse</span>
+                    </div>
+
+                    <!-- Section Annexes -->
+                    <div class="annexes-toggle">
+                        <button class="annexes-button" onclick="toggleAnnexes(this)">
+                            <span class="annexes-arrow">▶</span>
+                            Voir les détails
+                        </button>
+                        <div class="annexes-content">
+                            <div class="annexes-inner">
+
+                                <div class="annexes-section">
+                                    <h3>Les AC abordé :</h3>
+                                    <h4>Niveau 1</h4>
+                                    <ul>
+                                        <li>AC1: Appréhender l’écosystème numérique</li>
+                                        <li>AC2: Découvrir les aptitudes requises selon les différents secteurs informatiques</li>
+                                        <li>AC3: Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire</li>
+                                    </ul>
+                                    <h4>Niveau 2</h4>
+                                    <ul>
+                                        <li>AC4: Rendre compte de son activité professionnelle</li>
+                                    </ul>
+                                </div>
+
+                                <div class="annexes-section">
+                                    <h4>Présentation :</h4>
+                                    <a href="Com_Support.pdf" target="_blank">📄 Voir la présentation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">🗂️ Autres ressources</h3>
+                    <p class="project-description">
+                        <h4>R3.10</h4>
+                        Apprentissage des principes sur les fonctionnements des systèmes informatiques d’entreprise pour le travail en équipe/collaboration
+                        <br><br>
+                        <h4>PPP</h4>
+                        Introduction aux métiers de l’informatique et de leurs liens avec les autres équipes
+                        <br><br>
+                        <h4>Alternance</h4>
+                        Échanges et collaboration avec des équipes non informatiques pour la réalisation de tâches liées à des projets ou à la vie d’entreprise
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="content-block">
+                <h2>✨ Retour d'expérience</h2>
+                <p>
+                    Bien qu’assez limitée en contenu, cette compétence m’a permis de mieux comprendre les procédés à appliquer pour pouvoir travailler en équipe dans de bonnes conditions. J’ai aussi pu découvrir une grande quantité de métiers liés à l’informatique dont l’existence n’est pas forcément connue du grand public.
                 </p>
+                <p>
+                    J’ai été amené à collaborer avec des camarades ou collègues pour pouvoir réaliser des tâches, que ce soit parce que la consigne l’impose (pour les projets académiques) ou parce que j’ai besoin d’obtenir des informations et que je n’ai aucun moyen seul de me les procurer (en entreprise), ce qui résulte en des collaborations.
+                </p>
+                <br><br>
+                <h3>Points positifs</h3>
+                <h4>Communication</h4>
+                Les capacités oratoires ainsi que la qualité des supports de présentation ont pu être davantage développées avec cette compétence. Les présentations orales sont adaptables pour pouvoir s’adresser à des personnes ne possédant pas les connaissances du sujet.
+                <br><br>
+                <h4>Collaboration</h4>
+                La capacité à pouvoir collaborer en équipe a pu être améliorée compte tenu des projets et des contextes de travail. Des notions d’optimisation du temps ainsi que de la répartition des tâches ont aussi pu être acquises.
+                <br><br>
+
+                <h3>Points à améliorer</h3>
+                <h4>Niveau 2</h4>
+                En raison des projets et ressources associés, l’intégrité des apprentissages critiques formant le niveau 2 n’a pas été intégralement bien acquise et l’acquisition du niveau 2 reste fragile.
+
+                <br><br>
+                <h3>Auto-évaluation</h3>
+                <table>
+                    <tr>
+                        <th class="first-column">Niveau 1: Identifier ses aptitudes pour travailler dans une équipe</th>
+                        <th>Non-abordé</th>
+                        <th>Insuffisant</th>
+                        <th>Bien</th>
+                        <th>Très bien</th>
+                        <th>Excellent</th>
+                    </tr>
+                    <tr>
+                        <td>Appréhender l’écosystème numérique</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Découvrir les aptitudes requises selon les différents secteurs informatiques</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Acquérir les compétences interpersonnelles pour travailler en équipe</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                    </tr>
+                    <tr>
+                        <th colspan="6"></th>
+                    </tr>
+                    <tr>
+                        <th class="first-column">Niveau 2: Situer son rôle et ses missions au sein d'une équipe informatique</th>
+                        <th>Non-abordé</th>
+                        <th>Insuffisant</th>
+                        <th>Bien</th>
+                        <th>Très bien</th>
+                        <th>Excellent</th>
+                    </tr>
+                    <tr>
+                        <td>Comprendre la diversité, la structure et la dimension de l’informatique dans une organisation (ESN, DSI, …)</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Appliquer une démarche pour intégrer une équipe informatique au sein d’une organisation</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Rendre compte de son activité professionnelle</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <th colspan="6"></th>
+                    </tr>
+                    <tr>
+                        <th class="first-column">Niveau 3: Manager une équipe informatique</th>
+                        <th>Non-abordé</th>
+                        <th>Insuffisant</th>
+                        <th>Bien</th>
+                        <th>Très bien</th>
+                        <th>Excellent</th>
+                    </tr>
+                    <tr>
+                        <td>Organiser et partager une veille numérique</td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Identifier les enjeux de l'économie de l'innovation numérique</td>
+                        <td class="column"></td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Guider la conduite du changement informatique au sein d'une organisation</td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                    </tr>
+                    <tr>
+                        <td>Accompagner le management de projet informatique</td>
+                        <td class="column">X</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                    </tr>
+                </table>
             </div>
         </div>
-        
+
         <p class="footer">© 2025 Quang-Liêm NGUYEN - Portfolio BUT Informatique | Tous droits réservés</p>
     </div>
+
+    <script>
+        // Récupérer le thème sauvegardé ou utiliser 'dark' par défaut
+        let currentTheme = localStorage.getItem('theme') || 'dark';
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            const currentModeSpan = document.getElementById('currentMode');
+            const colorText = document.getElementById('colorText');
+
+            if (currentTheme === 'dark') {
+                // Passer en mode clair
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+                currentTheme = 'light';
+                localStorage.setItem('theme', 'light'); // Sauvegarder le choix
+
+                // Mettre à jour les éléments si ils existent
+                if (currentModeSpan) currentModeSpan.textContent = 'Clair';
+                if (colorText) colorText.textContent = 'Rouge';
+            } else {
+                // Passer en mode sombre
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+                currentTheme = 'dark';
+                localStorage.setItem('theme', 'dark'); // Sauvegarder le choix
+
+                // Mettre à jour les éléments si ils existent
+                if (currentModeSpan) currentModeSpan.textContent = 'Sombre';
+                if (colorText) colorText.textContent = 'Vert';
+            }
+        }
+
+        // Appliquer le thème au chargement
+        function applyTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            const currentModeSpan = document.getElementById('currentMode');
+            const colorText = document.getElementById('colorText');
+
+            if (currentTheme === 'light') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+                if (currentModeSpan) currentModeSpan.textContent = 'Clair';
+                if (colorText) colorText.textContent = 'Rouge';
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+                if (currentModeSpan) currentModeSpan.textContent = 'Sombre';
+                if (colorText) colorText.textContent = 'Vert';
+            }
+        }
+
+        // Initialisation au chargement de la page
+        document.addEventListener('DOMContentLoaded', function () {
+            applyTheme();
+            console.log('Page chargée avec le thème:', currentTheme);
+        });
+
+        // Menu déroulant
+        function toggleAnnexes(button) {
+            const content = button.nextElementSibling;
+            const arrow = button.querySelector('.annexes-arrow');
+            const isOpen = content.classList.contains('open');
+
+            if (isOpen) {
+                // Arrêter toutes les vidéos dans cette section d'annexes
+                const videos = content.querySelectorAll('video');
+                videos.forEach(video => {
+                    video.pause();
+                    video.currentTime = 0; // Remet la vidéo au début (optionnel)
+                });
+
+                content.classList.remove('open');
+                arrow.classList.remove('open');
+                button.innerHTML = '<span class="annexes-arrow">▶</span>Voir les détails';
+            } else {
+                content.classList.add('open');
+                arrow.classList.add('open');
+                button.innerHTML = '<span class="annexes-arrow open">▶</span>Masquer les détails';
+            }
+        }
+    </script>
 </body>
+
 </html>
