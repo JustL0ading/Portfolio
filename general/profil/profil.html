@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Quang-Liêm NGUYEN</title>
+    <link rel="stylesheet" href="../../competences/competence-style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../../indexGeneral.html" class="retour-button">↩ Retour</a>
+        <button class="mode-button" onclick="toggleTheme()">
+            <span class="icon" id="themeIcon">☀️</span>
+            <span id="themeText">Mode Clair</span>
+        </button>
+
+        <h1>Profil</h1>
+        <p class="subtitle">Identité, compétences techniques & contact</p>
+
+        <div class="content-section">
+
+            <!-- IDENTITÉ -->
+            <div class="content-block">
+                <h2>👤 Identité</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+
+            <!-- RECHERCHE -->
+            <div class="content-block">
+                <h2>🎯 Recherche</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <!-- COMPÉTENCES TECHNIQUES -->
+            <div class="content-block">
+                <h2>🛠️ Compétences Techniques</h2>
+
+                <h4>Développement</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">C</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Swing</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+
+                <h4>Développement Web</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+
+                <h4>Outils & Environnements</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">VS Code</span>
+                </div>
+
+                <h4>Autre</h4>
+                <div class="tech-tags">
+                    <span class="tech-tag">Gestion de projet</span>
+                    <span class="tech-tag">Anglais technique</span>
+                    <span class="tech-tag">Communication</span>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="content-block">
+                <h2>📬 Contact</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <br>
+                <div class="tech-tags">
+                    <span class="tech-tag">✉️ email@example.com</span>
+                    <span class="tech-tag">💼 LinkedIn</span>
+                    <span class="tech-tag">🐙 GitHub</span>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="footer">© 2025 Quang-Liêm NGUYEN | Tous droits réservés</p>
+    </div>
+
+    <script>
+        let currentTheme = localStorage.getItem('theme') || 'dark';
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+                currentTheme = 'light';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+                currentTheme = 'dark';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            if (currentTheme === 'light') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+            }
+        });
+    </script>
+</body>
+</html>
