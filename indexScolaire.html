@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Scolaire - BUT Informatique Parcours A</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Correction du bug d'agrandissement du conteneur au hover :
+           On remplace transform: scale() par une ombre + bordure,
+           identique à ce qui est fait dans competence-style.css */
+        .competence-button {
+            transform: none !important;
+        }
+        .competence-button:hover {
+            transform: none !important;
+            box-shadow: 0 6px 20px rgba(238, 0, 255, 0.4), 0 0 8px #2990df, 0 0 8px #2990df, 0 0 8px #2990df;
+            border: 2px solid #2990df;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="mode-button" style="right: auto; left: 20px; text-decoration: none;">↩ Accueil</a>
+        <button class="mode-button" onclick="toggleTheme()">
+            <span class="icon" id="themeIcon">☀️</span>
+            <span id="themeText">Mode Clair</span>
+        </button>
+        <h1>Portfolio</h1>
+        <p class="subtitle">BUT Informatique - Parcours A</p>
+        
+        <div class="competences-section">
+            <h2 class="competences-title">Compétences</h2>
+            <div class="competences-list">
+                <a href="competences/competence1/competence1.html" class="competence-button">
+                    1. Réaliser: Réaliser un développement d'application
+                </a>
+                <a href="competences/competence2/competence2.html" class="competence-button">
+                    2. Optimiser: Optimiser des applications informatiques
+                </a>
+                <a href="competences/competence3/competence3.html" class="competence-button">
+                    3. Administrer: Administrer des systèmes informatiques communicants complexes
+                </a>
+                <a href="competences/competence4/competence4.html" class="competence-button">
+                    4. Gérer: Gérer des données de l'information
+                </a>
+                <a href="competences/competence5/competence5.html" class="competence-button">
+                    5. Conduire: Conduire un projet
+                </a>
+                <a href="competences/competence6/competence6.html" class="competence-button">
+                    6. Collaborer: Collaborer au sein d'une équipe informatique
+                </a>
+            </div>
+        </div>
+        
+        <p class="footer">© 2025 Quang-Liêm NGUYEN - Portfolio BUT Informatique | Tous droits réservés</p>
+    </div>
+
+    <script>
+        let currentTheme = localStorage.getItem('theme') || 'dark';
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+                currentTheme = 'light';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+                currentTheme = 'dark';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            if (currentTheme === 'light') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+            }
+        });
+    </script>
+</body>
+</html>

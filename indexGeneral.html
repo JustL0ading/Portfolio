@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Quang-Liêm NGUYEN</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Sections du portfolio général */
+        .sections-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .section-button {
+            background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            color: var(--text-color);
+            padding: 18px 25px;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: default;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            opacity: 0.65;
+        }
+
+        .section-button.available {
+            cursor: pointer;
+            opacity: 1;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .section-button.available:hover {
+            box-shadow: 0 6px 20px rgba(238, 0, 255, 0.4), 0 0 5px #2990df, 0 0 5px #2990df, 0 0 5px #2990df;
+            border-color: #2990df;
+        }
+
+        .section-button.available::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .section-button.available:hover::before {
+            left: 100%;
+        }
+
+        .section-icon {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .section-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .section-subtitle {
+            font-size: 0.82rem;
+            opacity: 0.75;
+            font-weight: normal;
+        }
+
+        .soon-badge {
+            margin-left: auto;
+            background: rgba(255,255,255,0.15);
+            color: var(--text-color);
+            font-size: 0.72rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            opacity: 0.7;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="mode-button" style="right: auto; left: 20px; text-decoration: none;">↩ Accueil</a>
+        <button class="mode-button" onclick="toggleTheme()">
+            <span class="icon" id="themeIcon">☀️</span>
+            <span id="themeText">Mode Clair</span>
+        </button>
+
+        <h1>Portfolio</h1>
+        <p class="subtitle">Quang-Liêm NGUYEN — Recherche Alternance & Master</p>
+
+        <div class="competences-section">
+            <h2 class="competences-title">Sommaire</h2>
+            <div class="sections-list">
+
+                <!-- 1. Présentation -->
+                <a href="general/presentation.html" class="section-button">
+                    <span class="section-icon">👤</span>
+                    <span class="section-info">
+                        <span class="section-title">Présentation</span>
+                        <span class="section-subtitle">Qui suis-je ? Parcours, motivations, objectifs</span>
+                    </span>
+                    <span class="soon-badge">À venir</span>
+                </a>
+
+                <!-- 2. Compétences techniques -->
+                <a href="general/competences.html" class="section-button">
+                    <span class="section-icon">🛠️</span>
+                    <span class="section-info">
+                        <span class="section-title">Compétences Techniques</span>
+                        <span class="section-subtitle">Langages, frameworks, outils, environnements</span>
+                    </span>
+                    <span class="soon-badge">À venir</span>
+                </a>
+
+                <!-- 3. Projets -->
+                <a href="general/projets.html" class="section-button">
+                    <span class="section-icon">🚀</span>
+                    <span class="section-info">
+                        <span class="section-title">Projets</span>
+                        <span class="section-subtitle">Réalisations personnelles, académiques et professionnelles</span>
+                    </span>
+                    <span class="soon-badge">À venir</span>
+                </a>
+
+                <!-- 4. Expériences -->
+                <a href="general/experiences.html" class="section-button">
+                    <span class="section-icon">💼</span>
+                    <span class="section-info">
+                        <span class="section-title">Expériences</span>
+                        <span class="section-subtitle">Alternance, stages, missions professionnelles</span>
+                    </span>
+                    <span class="soon-badge">À venir</span>
+                </a>
+
+                <!-- 5. Formation -->
+                <a href="general/formation.html" class="section-button">
+                    <span class="section-icon">🎓</span>
+                    <span class="section-info">
+                        <span class="section-title">Formation</span>
+                        <span class="section-subtitle">Cursus scolaire, certifications, autoformation</span>
+                    </span>
+                    <span class="soon-badge">À venir</span>
+                </a>
+
+                <!-- 6. CV & Contact -->
+                <a href="general/contact.html" class="section-button">
+                    <span class="section-icon">📬</span>
+                    <span class="section-info">
+                        <span class="section-title">CV & Contact</span>
+                        <span class="section-subtitle">Télécharger mon CV, me contacter, LinkedIn, GitHub</span>
+                    </span>
+                    <span class="soon-badge">À venir</span>
+                </a>
+
+            </div>
+        </div>
+
+        <p class="footer">© 2025 Quang-Liêm NGUYEN | Tous droits réservés</p>
+    </div>
+
+    <script>
+        let currentTheme = localStorage.getItem('theme') || 'dark';
+
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+                currentTheme = 'light';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+                currentTheme = 'dark';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const themeText = document.getElementById('themeText');
+            if (currentTheme === 'light') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Mode Sombre';
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Mode Clair';
+            }
+        });
+    </script>
+</body>
+</html>
