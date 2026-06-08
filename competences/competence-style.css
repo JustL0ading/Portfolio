@@ -190,7 +190,7 @@ h1 {
 .content-block:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 20px var(--box-shadow-glow), 0 0 5px var(--box-shadow), 0 0 5px var(--box-shadow), 0 0 5px var(--box-shadow);
-    border: 2px solid var(--box-shadow);
+    /*border: 2px solid var(--box-shadow);*/
 }
 
 .content-block::before {
