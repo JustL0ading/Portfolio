@@ -67,21 +67,23 @@
             <div class="content-block">
                 <h2>🧪 Projets associés</h2>
 
+
                 <div class="project-item">
-                    <h3 class="project-title">🚀 Réalisation d'un jeu d'arcade</h3>
+                    <h3 class="project-title">📦 Application métier de suivi des opérations</h3>
                     <p class="project-description">
-                        Réalisation d'un jeu d'arcade de type Space Invaders lors de la SAÉ 2.01. Un moteur de jeu Java a été fourni et il devait servir de base pour développer peu importe le jeu attribué.
+                        Conception et développement intégral d'une application métier de visualisation et planification d'opérations de maintenance avec Power Apps dans le cadre de l'alternance au <strong>Technicentre Grand-Est SNCF Voyageurs</strong>.
                         <br><br>
-                        La consigne imposait la présence du strict nécessaire pour pouvoir qualifier le livrable de « jeu ». Des éléments en plus ont été implémentés tels qu’un écran d’accueil, des effets sonores et un affichage des crédits (via console).
+                        Le client souhaitait avoir la possibilité de visualiser les opérations planifiées sur un calendrier horizontal de type Gantt, tout en pouvant planifier les opérations et les marquer. L'application devait offrir des fonctionnalités comme l'historique des opérations validées, la possibilité de filtrage sur les opérations affichées selon leurs propriétés, l'ajout de codes couleurs, le calcul automatique des durées d'opérations en jours ouvrés et en jours non-ouvrés ou encore l'intégration de la traçabilité complète de chaque opération.<br>
+                        L'objectif est donc la conception d'une application complexe de gestion, visualisation et mise à jour de données.
                         <br>
                         <br>
-                        Note obtenue: 15/20.
+                        Projet en cours
                     </p>
                     <div class="tech-tags">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Swing</span>
-                        <span class="tech-tag">Design Pattern</span>
-                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Power Apps</span>
+                        <span class="tech-tag">Sensibilisation UI/UX</span>
+                        <span class="tech-tag">Étude de besoin</span>
+                        <span class="tech-tag">Base de données Dataverse</span>
                     </div>
                 
                     <!-- Section Annexes -->
@@ -92,30 +94,21 @@
                         </button>
                         <div class="annexes-content">
                             <div class="annexes-inner">
-
                                 <div class="annexes-section">
-                                    <h3>Les AC abordé :</h3>
-                                    <h4>Niveau 1</h4>
-                                    <ul>
-                                        <li>AC1: Implémenter des conceptions simples</li>
-                                        <li>AC2: Élaborer des conceptions simples</li>
-                                        <li>AC3: Faire des essais et évaluer leurs résultats en regard des spécifications</li>
-                                        <li>AC4: Développer des interfaces utilisateurs</li>
-                                    </ul>
-                                    <h4>Niveau 2</h4>
-                                    <ul>
-                                        <li>AC1: Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</li>
-                                        <li>AC3: Adopter de bonnes pratiques de conception et de programmation</li>
-                                    </ul>
-                                </div>
-                            
-                                <div class="annexes-section">
-                                    <h4>Aperçu vidéo :</h4>
-                                    <video controls poster="preview.png">
-                                        <source src="Preview.mp4" type="video/mp4">
-                                        Le navigateur ne supporte pas la vidéo.
-                                    </video>
+                                    <h3>Défis et Solutions Techniques :</h3>
+                                    <h4>Création de composants sur-mesure</h4>
+                                    
+                                    <p>Absence d'objets natifs pour la visualisation complexe (calendriers personnalisés, planning de charge).</p><br>
 
+                                    <p><strong>Solution :</strong> Développement de composants logiques via des galeries imbriquées et des collections dynamiques pour simuler un diagramme de Gantt/vue calendrier.</p><br>
+
+                                    <h4>Performance & Volume de données</h4>
+                                    <p>Gestion de la délégation Dataverse pour éviter les ralentissements sur les gros historiques de maintenance.</p><br>
+                                    <p><strong>Solution:</strong> Optimisation des requêtes et filtrage préventif des données côté serveur.</p><br>
+
+                                    <h4>Architecture de l'information (Dashboarding)</h4>
+                                    <p>Centraliser l'ensemble du flux de maintenance sur un écran unique sans sacrifier la lisibilité.</p><br>
+                                    <p><strong>Solution:</strong> Conception d'une interface "Single Page" optimisée pour poste fixe. Utilisation de zones de filtrage contextuelles et de pop-ups de détails pour désencombrer la vue principale tout en gardant les informations clés visibles</p><br>
                                 </div>
                             </div>
                         </div>
@@ -123,6 +116,119 @@
                 </div>
 
 
+                <div class="project-item">
+                    <h3 class="project-title">🌱 Application Réseau Cocagne</h3>
+                    <p class="project-description">
+                        Création d'une application mobile de reconnaissance de végétaux par IA dans le cadre d'un projet SAÉ.
+                        <br><br>
+                        Ce projet SAÉ est une mise en situation où le réseau Cocagne nous a chargé de développer une application mobile utilisateur qui a pour principe la reconnaissance de végétaux avec IA. Le cahier des charges précisait l'obligation d'intégrer une IA locale indépendante d'une API (Modèle TensorFlow entraîné avec un script Python et un dataset trouvé en ligne), la géolocalisation pour la sauvegarde des coordonnées GPS des photos prises, l'indication du taux de confiance des réponses IA, la formulation des textes légaux (Conditions d'utilisation) ainsi que l'accord d'un minimum d'attention portée sur le design.
+                        <br>
+                        <br>
+                        Projet terminé (18.33 / 20)
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Tensorflow Lite</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                
+                    <!-- Section Annexes -->
+                    <div class="annexes-toggle">
+                        <button class="annexes-button" onclick="toggleAnnexes(this)">
+                            <span class="annexes-arrow">▶</span>
+                            Voir les détails
+                        </button>
+                        <div class="annexes-content">
+                            <div class="annexes-inner">
+                                <div class="annexes-section">
+                                    <h3>Défis et Solutions Techniques :</h3>
+                                    <h4>Entrainement IA</h4>
+                                    <p>Réponses de l'IA insatisfaisantes malgré de longs entraînements (>24H)</p><br>
+                                    <p><strong>Solution :</strong> Intégration d'un modèle déjà entraîné trouvé en ligne au même format (Reconnaissance de fruits uniquement).</p><br>
+
+                                    <h4>Entrainement IA</h4>
+                                    <p>Réponses de l'IA insatisfaisantes malgré de longs entraînements (>24H)</p><br>
+                                    <p><strong>Solution :</strong> Lorem Ipsum Dolor.</p><br>
+
+                                    <h4>Aperçu application :</h4>
+                                    <img src="AppCocagne.png" alt="Capture d'écran de l'application Cocagne">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">🕹 Flipper Unity 3D</h3>
+                    <p class="project-description">
+                        Création d'un flipper virtuel sur Unity 3D dans le cadre d'un projet scolaire
+                        <br><br>
+                        Afin de découvrir les outils relatifs à la modélisation et la conception 3D, nous avions été amenés à découvrir le logiciel de création de jeux-vidéos Unity 3D. Le projet associé a été la création d'un flipper numérique sur le thème des Vosges avec pour objectif final l'intégration dans un flipper possédant un écran de jeu monté par l'IUT. Le projet a été une réussite et m'a permis l'obtention de la note de 18/20, et la mise en compatibilité avec le Flipper de l'IUT a pu être faite à temps pour les portes ouvertes.
+                        <br><br>
+                        Projet terminé (18 / 20)
+                        <div class="tech-tags">
+                            <span class="tech-tag">Unity 3D</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Blender</span>
+                        </div>
+                        <div class="annexes-toggle">
+                            <button class="annexes-button" onclick="toggleAnnexes(this)">
+                                <span class="annexes-arrow">▶</span>
+                                Voir les détails
+                            </button>
+                            <div class="annexes-content">
+                                <div class="annexes-inner">
+                                    <div class="annexes-section">
+                                        <h3>Un succès pour un premier projet</h3>
+                                        <h4>Réussite</h4>
+                                        <p>Le jeu a été estimé adéquat pour être utilisé lors des démonstrations aux portes ouvertes ou pendant les périodes d'immersion.</p><br>
+                                        <p><strong>Photo publiée sur le compte de l'IUT :</strong> <a href="https://www.instagram.com/p/DUqiHX7jI6j/?img_index=1">Lien - Première photo</a></p><br>
+
+                                        <h4>Aperçu jeu :</h4>
+                                        <img src="Flipper.png" alt="Capture d'écran Flipper">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <h3 class="project-title">🌱 Jardin Virtuel</h3>
+                    <p class="project-description">
+                        Création d'une application mobile de reconnaissance de végétaux par IA dans le cadre d'un projet SAÉ
+                        <br><br>
+                        Associé au projet de développement d'application mobile Jardin Cocagne, ce mini projet (à réaliser en 2H) avait pour objectif la conception d'un espace de visite virtuel d'un jardin. En complément du projet Flipper Unity, ce projet servait surtout à prendre en main davantage d'outils et fonctionnalités proposés par Unity 3D et qui n'auraient pas été vus avec le projet précédent. Le projet nécessitait la création d'un environnement naturel (Terraforming sur Unity), l'intégration d'assets en rapport avec la thématique, un déplacement à la première personne ainsi que de l'animation. Enfin, le projet devait être exporté dans un format où il pouvait être intégré en Web.
+
+                        <br><br>
+                        Projet terminé
+                        <div class="tech-tags">
+                            <span class="tech-tag">Unity 3D</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">Blender</span>
+                        </div>
+                        <div class="annexes-toggle">
+                            <button class="annexes-button" onclick="toggleAnnexes(this)">
+                                <span class="annexes-arrow">▶</span>
+                                Voir les détails
+                            </button>
+                            <div class="annexes-content">
+                                <div class="annexes-inner">
+                                    <div class="annexes-section">
+                                        <h3>Défis et Solutions :</h3>
+                                        <h4>Limite stricte de temps</h4>
+                                        <p>Ce mini projet devait être réalisé en deux heures uniquement</p><br>
+                                        <p><strong>Solution :</strong> Afin de respecter le délai obligatoire, la qualité de l'environnement avait dû être réduite malgré un haut potentiel en qualité (Graphismes, animation et expérience).</p><br>
+
+                                        <h4>Aperçu application :</h4>
+                                        <img src="AppCocagneUnity.png" alt="Capture d'écran du jardin virtuel">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
 
                 
                 <div class="project-item">
@@ -249,7 +355,7 @@
                         <br>
                         <br>
                         <h4>Alternance</h4>
-                        Création de nouveaux sites d'équipes avec les outils Microsoft. Développement d'applications à venir
+                        Création de flux de traitement de données automatisés sur la Power Platform
                         <div class="tech-tags">
                             <span class="tech-tag">SharePoint</span>
                             <span class="tech-tag">PowerBI</span>
@@ -385,17 +491,17 @@
                     <tr>
                         <td>Choisir et implémenter les architectures adaptés</td>
                         <td class="column"></td>
-                        <td class="column">X</td>
                         <td class="column"></td>
+                        <td class="column">X</td>
                         <td class="column"></td>
                         <td class="column"></td>
                     </tr>
                     <tr>
                         <td>Faire évoluer une application existante</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
                         <td class="column">X</td>
-                        <td class="column"></td>
-                        <td class="column"></td>
-                        <td class="column"></td>
                         <td class="column"></td>
                     </tr>
                     <tr>
