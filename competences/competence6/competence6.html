@@ -32,10 +32,10 @@
             <div class="content-block">
                 <h2>🛠️ L'acquisition des compétences</h2>
                 <p>
-                    Jusqu’à présent, cette compétence n’a pu être développée que par des projets académiques. Les projets dans le cadre de l’alternance n’ont jusqu’à présent pas demandé à travailler en équipe pour effectuer les tâches. Le travail en équipe se fera au cours de la deuxième année d’alternance, mais sûrement dans une équipe de petite taille.
+                    J'ai pu travailler cette compétence à la fois avec les projets à l'école mais aussi en entreprise. Là où à l'école, j'ai surtout été exposé au travail en équipe, j'ai surtout été dans des situations où, en tant qu'unique membre, je devais organiser les projets en totale autonomie et moi-même m'occuper des échanges avec les clients. En tant qu'unique développeur présent sur le site de l'entreprise, il était de ma responsabilité d'accompagner les agents dans leurs démarches.
                 </p>
                 <p>
-                    Bien que le développement de la compétence soit limité, le niveau 2 semble être bien pris en main sans atteindre la perfection non plus. Le niveau atteint reste néanmoins décent et sa qualité pourra être améliorée lors des futurs projets.
+                    Le niveau 3 a pu être globalement acquis, mais laisse encore place à de l'amélioration qui pourra surtout se travailler en entreprise dans des situations réelles avec de vraies équipes.
                 </p>
 
                 <br><br>
@@ -58,6 +58,83 @@
 
             <div class="content-block">
                 <h2>🧪 Projets associés</h2>
+
+                <div class="project-item">
+                    <h3 class="project-title">📦 Application métier de suivi des opérations</h3>
+                    <p class="project-description">
+                        Conception et développement intégral d'une application métier de visualisation et planification d'opérations de maintenance avec Power Apps dans le cadre de l'alternance au <strong>Technicentre Grand-Est SNCF Voyageurs</strong>.
+                        <br>
+                        <br>
+                        Le client souhaitait avoir la possibilité de visualiser les opérations planifiées sur un calendrier horizontal de type Gantt, tout en pouvant planifier les opérations et les marquer. L'application devait offrir des fonctionnalités comme l'historique des opérations validées, la possibilité de filtrage sur les opérations affichées selon leurs propriétés, l'ajout de codes couleurs, le calcul automatique des durées d'opérations en jours ouvrés et en jours non-ouvrés ou encore l'intégration de la traçabilité complète de chaque opération.<br>
+                        L'objectif est donc la conception d'une application complexe de gestion, visualisation et mise à jour de données.
+                        <br>
+                        <br>
+                        Pour ce projet, je suis le seul développeur et c'est moi qui suis en charge du bon déroulement de l'intégrité du projet, de l'établissement du cahier des charges ainsi que de ses alignements, des échanges réguliers pour assurer l'absence d'écart entre le produit et la demande, jusqu'à la future mise en production et l'assistance utilisateur.
+                        <br>
+                        <br>
+                        Projet en cours
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Gestion de projet</span>
+                        <span class="tech-tag">Autonomie totale</span>
+                        <span class="tech-tag">Échanges avec clients</span>
+                        <span class="tech-tag">Power Apps</span>
+                        <span class="tech-tag">Sensibilisation UI/UX</span>
+                        <span class="tech-tag">Étude de besoin</span>
+                        <span class="tech-tag">Base de données Dataverse</span>
+                    </div>
+                
+                    <!-- Section Annexes -->
+                    <div class="annexes-toggle">
+                        <button class="annexes-button" onclick="toggleAnnexes(this)">
+                            <span class="annexes-arrow">▶</span>
+                            Voir les détails
+                        </button>
+                        <div class="annexes-content">
+                            <div class="annexes-inner">
+                                <div class="annexes-section">
+                                    <h3>Les AC abordé :</h3>
+                                    <h4>Niveau 1</h4>
+                                    <ul>
+                                        <li>AC1: Appréhender l’écosystème numérique</li>
+                                        <li>AC2: Découvrir les aptitudes requises selon les différents secteurs informatiques</li>
+                                        <li>AC3: Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire</li>
+                                    </ul>
+                                    <h4>Niveau 2</h4>
+                                    <ul>
+                                        <li>AC1: Comprendre la diversité, la structure et la dimension de l’informatique dans une organisation (ESN, DSI, …)</li>
+                                        <li>AC4: Rendre compte de son activité professionnelle</li>
+                                    </ul>
+                                    <h4>Niveau 3</h4>
+                                    <ul>
+                                        <li>AC1: Organiser et partager une veille numérique</li>
+                                        <li>AC3: Guider la conduite du changement informatique au sein d’une organisation</li>
+                                        <li>AC4: Accompagner le management de projet informatique</li>
+                                    </ul>
+                                    <br>
+
+                                    <h3>Défis et Solutions Techniques :</h3>
+                                    <h4>Création de composants sur-mesure</h4>
+                                    
+                                    <p>Absence d'objets natifs pour la visualisation complexe (calendriers personnalisés, planning de charge).</p><br>
+
+                                    <p><strong>Solution :</strong> Développement de composants logiques via des galeries imbriquées et des collections dynamiques pour simuler un diagramme de Gantt/vue calendrier.</p><br>
+
+                                    <h4>Performance & Volume de données</h4>
+                                    <p>Gestion de la délégation Dataverse pour éviter les ralentissements sur les gros historiques de maintenance.</p><br>
+                                    <p><strong>Solution:</strong> Optimisation des requêtes et filtrage préventif des données côté serveur.</p><br>
+
+                                    <h4>Architecture de l'information (Dashboarding)</h4>
+                                    <p>Centraliser l'ensemble du flux de maintenance sur un écran unique sans sacrifier la lisibilité.</p><br>
+                                    <p><strong>Solution:</strong> Conception d'une interface "Single Page" optimisée pour poste fixe. Utilisation de zones de filtrage contextuelles et de pop-ups de détails pour désencombrer la vue principale tout en gardant les informations clés visibles</p><br>
+
+                                    <h4>Aperçu application :</h4>
+                                    <img src="..\..\media\SuiviProdRgoDep.png" alt="Capture d'écran de l'application">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="project-item">
                     <h3 class="project-title">🌐 PPP: Réalisation d'une fiche métier</h3>
@@ -169,7 +246,8 @@
                         Introduction aux métiers de l’informatique et de leurs liens avec les autres équipes
                         <br><br>
                         <h4>Alternance</h4>
-                        Échanges et collaboration avec des équipes non informatiques pour la réalisation de tâches liées à des projets ou à la vie d’entreprise
+                        Échanges et collaboration avec des équipes non informatiques pour la réalisation de tâches liées à des projets ou à la vie d’entreprise<br>
+                        Projet de mise à jour d'outils informatiques déjà pris en main (Refonte et sensibilisation des usages)
                     </p>
                 </div>
 
@@ -178,23 +256,23 @@
             <div class="content-block">
                 <h2>✨ Retour d'expérience</h2>
                 <p>
-                    Bien qu’assez limitée en contenu, cette compétence m’a permis de mieux comprendre les procédés à appliquer pour pouvoir travailler en équipe dans de bonnes conditions. J’ai aussi pu découvrir une grande quantité de métiers liés à l’informatique dont l’existence n’est pas forcément connue du grand public.
+                    J'ai pu finaliser la prise en main de cette compétence jusqu'au niveau 3 en cette dernière année de BUT par la présence plus élevée de projets de taille importante tant à l'école qu'en entreprise. Les outils et méthodes ont pu être appliqués lorsque nécessaire et l'importance de la communication avec des membres non issus du domaine initial a pu être grandement employée en entreprise (Seul développeur présent sur le site).
                 </p>
                 <p>
-                    J’ai été amené à collaborer avec des camarades ou collègues pour pouvoir réaliser des tâches, que ce soit parce que la consigne l’impose (pour les projets académiques) ou parce que j’ai besoin d’obtenir des informations et que je n’ai aucun moyen seul de me les procurer (en entreprise), ce qui résulte en des collaborations.
+                    J'ai eu davantage l'occasion de collaborer cette année due à la présence de projets SAÉ en cette dernière année de BUT. Ces projets étaient situés à un niveau supérieur à ceux des années précédentes et étaient plus exigeants que ce soit sur le côté technique que sur le côté relationnel et communication.
                 </p>
                 <br><br>
                 <h3>Points positifs</h3>
                 <h4>Communication</h4>
                 Les capacités oratoires ainsi que la qualité des supports de présentation ont pu être davantage développées avec cette compétence. Les présentations orales sont adaptables pour pouvoir s’adresser à des personnes ne possédant pas les connaissances du sujet.
                 <br><br>
-                <h4>Collaboration</h4>
-                La capacité à pouvoir collaborer en équipe a pu être améliorée compte tenu des projets et des contextes de travail. Des notions d’optimisation du temps ainsi que de la répartition des tâches ont aussi pu être acquises.
+                <h4>Collaboration et autonomie</h4>
+                La capacité à pouvoir collaborer en équipe a pu être améliorée compte tenu des projets et des contextes de travail. Des notions d’optimisation du temps ainsi que de la répartition des tâches ont aussi pu être acquises. De plus, le contexte des missions en entreprise permet le travail en autonomie intégral ce qui m'a permis de travailler dans deux contextes: En tant que membre d'équipe et en tant qu'unique membre.
                 <br><br>
 
                 <h3>Points à améliorer</h3>
-                <h4>Niveau 2</h4>
-                En raison des projets et ressources associés, l’intégrité des apprentissages critiques formant le niveau 2 n’a pas été intégralement bien acquise et l’acquisition du niveau 2 reste fragile.
+                <h4>Accompagnement au changement</h4>
+                Du fait du contexte en entreprise, l'accompagnement aux changements informatiques n'a pas été suffisamment pratiqué et nécessite davantage de pratique pour obtenir un niveau plus acceptable.
 
                 <br><br>
                 <h3>Auto-évaluation</h3>
@@ -254,8 +332,8 @@
                         <td>Comprendre la diversité, la structure et la dimension de l’informatique dans une organisation (ESN, DSI, …)</td>
                         <td class="column"></td>
                         <td class="column"></td>
-                        <td class="column">X</td>
                         <td class="column"></td>
+                        <td class="column">X</td>
                         <td class="column"></td>
                     </tr>
                     <tr>
@@ -270,8 +348,8 @@
                         <td>Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique</td>
                         <td class="column"></td>
                         <td class="column"></td>
-                        <td class="column">X</td>
                         <td class="column"></td>
+                        <td class="column">X</td>
                         <td class="column"></td>
                     </tr>
                     <tr>
@@ -295,33 +373,33 @@
                     </tr>
                     <tr>
                         <td>Organiser et partager une veille numérique</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
                         <td class="column">X</td>
-                        <td class="column"></td>
-                        <td class="column"></td>
                         <td class="column"></td>
                         <td class="column"></td>
                     </tr>
                     <tr>
                         <td>Identifier les enjeux de l'économie de l'innovation numérique</td>
                         <td class="column"></td>
+                        <td class="column"></td>
+                        <td class="column"></td>
                         <td class="column">X</td>
-                        <td class="column"></td>
-                        <td class="column"></td>
                         <td class="column"></td>
                     </tr>
                     <tr>
                         <td>Guider la conduite du changement informatique au sein d'une organisation</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
                         <td class="column">X</td>
-                        <td class="column"></td>
-                        <td class="column"></td>
                         <td class="column"></td>
                         <td class="column"></td>
                     </tr>
                     <tr>
                         <td>Accompagner le management de projet informatique</td>
+                        <td class="column"></td>
+                        <td class="column"></td>
                         <td class="column">X</td>
-                        <td class="column"></td>
-                        <td class="column"></td>
                         <td class="column"></td>
                         <td class="column"></td>
                     </tr>
